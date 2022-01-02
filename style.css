@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 200px;
+  z-index: 999;
+  align-items: center;
+  height: 10vh;
+}
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #3a6cf4;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #3a6cf4;
+  padding-left: 30px;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.navigation a:hover {
+  color: #330c8d;
+}
+
+.mainSection {
+  padding: 100px 200px;
+  background-color: #601cfc;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main h2 {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.main h2 span {
+  display: inline-block;
+  color: #4e9eff;
+  font-size: 3em;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.main h3 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  color: #fff;
+  background-color: #3a6cf4;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  transition: 0.7s ease;
+  width: 220px;
+}
+
+.main-btn:hover {
+  background-color: #0a49fc;
+  transform: scale(1.1);
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  color: #3a6cf4;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.cards {
+  margin-top: 10px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  background-color: #000016;
+  margin-top: 10px;
+}
+
+.projects .content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.project__card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.project__card:hover {
+  transform: scale(1.1);
+}
+
+.project__img img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+.project__card:hover .project__img {
+  opacity: 0.9;
+}
+
+.project__info {
+  padding: 1em;
+}
+
+.project__category {
+  font-size: 0.8em;
+  color: #000;
+}
+
+.project__title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.moreDetails {
+  text-decoration: none;
+  color: #3a6cf4;
+}
+
+.moreDetails:hover {
+  color: #601cfc;
+}
+
+.contact {
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+.contact .icon {
+  font-size: 4.5em;
+}
+
+.contact .info h3 {
+  color: #000;
+}
+
+.contact .info p {
+  font-size: 1.5em;
+}
+
+.footer {
+  background-color: #000016;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footer__title span {
+  color: #3a6cf4;
+}
+
+.footer .social-icons a {
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+}
+@media screen and (min-device-width: 540px) and (max-device-width: 1024px) {
+  header {
+    padding: 12px 18px !important;
+  }
+
+  .logo {
+    font-size: 1.8em !important;
+  }
+
+  .navigation a {
+    padding-left: 10px;
+    font-size: 1.3em !important;
+  }
+
+  .mainSection {
+    padding: 300px 50px;
+  }
+
+  .main h2 {
+    font-size: 1.6em !important;
+  }
+  .main h2 span {
+    font-size: 2.5em !important;
+  }
+  .main h3 {
+    font-size: 2.5em !important;
+  }
+
+  .title {
+    font-size: 1.9em !important;
+  }
+  .footer__title {
+    font-size: 1.1em !important;
+  }
+}
+
+@media screen and (min-device-width: 301px) and (max-device-width: 539px) {
+  body {
+    font-size: 12px;
+  }
+
+  header {
+    padding: 12px 10px !important;
+  }
+  .logo {
+    font-size: 1.2em !important;
+  }
+  .navigation {
+    padding-right: 40px;
+  }
+  .navigation a {
+    padding-left: 4px;
+    font-size: 1em !important;
+  }
+
+  .mainSection {
+    padding: 250px 25px;
+  }
+
+  .main h2 {
+    font-size: 1em !important;
+  }
+  .main h2 span {
+    font-size: 2em !important;
+  }
+  .main h3 {
+    font-size: 1.2em !important;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 1.9em !important;
+  }
+  .footer__title {
+    font-size: 0.8em !important;
+  }
+
+  .footer .social-icons {
+    padding-right: 40px;
+  }
+  .footer .social-icons a {
+    font-size: 1.1em;
+    padding: 0 6px 0 0;
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    font-size: 10px;
+  }
+  header {
+    padding: 12px 10px !important;
+  }
+  .logo {
+    font-size: 1.2em !important;
+  }
+  .navigation {
+    padding-right: 10px;
+  }
+  .navigation a {
+    padding-left: 4px;
+    font-size: 1em !important;
+  }
+
+  .mainSection {
+    padding: 250px 10px;
+  }
+
+  .main h2 {
+    font-size: 1em !important;
+  }
+  .main h2 span {
+    font-size: 1.8em !important;
+  }
+  .main h3 {
+    font-size: 1.2em !important;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__title {
+    font-size: 0.6em !important;
+  }
+
+  .footer .social-icons {
+    padding-right: 10px;
+  }
+  .footer .social-icons a {
+    font-size: 1.1em;
+    padding: 0 6px 0 0;
+  }
+}
